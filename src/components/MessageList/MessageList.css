@@ -1,0 +1,39 @@
+.messageList{
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100vh - 130px);
+}
+
+.messageList::-webkit-scrollbar{
+  width: 0;
+}
+
+.newMessage, .selfMessage{
+  margin:5px 0;
+}
+
+.newMessage{
+  color: red;
+}
+
+.selfMessage{
+  color: blue;
+  align-self: flex-end;
+}
+
+@media (max-width: 950px){
+  .messageList{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .messageList{
+    font-size: 15px;
+  }
+}

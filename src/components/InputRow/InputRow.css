@@ -1,0 +1,86 @@
+.inputRow {
+  position: fixed;
+  display: flex;
+  bottom: 10px;
+  left: 10%;
+  right: 10%;
+  padding: 0 15px;
+  height: 50px;
+  align-items: center;
+}
+
+.messageInputWrap, .userInputWrap{
+  display: flex;
+  align-items: center;
+}
+
+.messageInputWrap{
+  width: 100%;
+}
+
+.userLabel{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.userNameInput, .messageInput{
+  flex-grow: 1;
+  margin: 0 18px;
+  padding-left: 10px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.userNameInput{
+  max-width: 110px;
+}
+
+.sendButton{
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sendButton:active{
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 950px){
+  .inputRow{
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 640px){
+  .userNameInput, .messageInput{
+    height: 20px;
+    margin: 0 10px;
+    font-size: 17px;
+  }
+
+  .userNameInput{
+    max-width: 70px;
+  }
+
+  .sendButton{
+    padding: 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .inputRow{
+    flex-wrap: wrap;
+    height: 90px;
+  }
+
+  .userLabel{
+    padding-bottom: 5px;
+  }
+
+  .messageInput{
+    margin-left: 0;
+  }
+}
